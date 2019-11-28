@@ -7,6 +7,8 @@
     box-sizing: border-box;
 }
 
+body{font-family: Arial, Helvetica, sans-serif;}
+
 /* layouts
 *****************************/
 
@@ -22,7 +24,7 @@ nav {
 }
 
 main{
-    background-color: khaki;
+    background-color: black;
     min-height: 80vh;
     padding: 5vw 3vw;
 }
@@ -47,8 +49,114 @@ footer{
 .poster{
     background-color: indigo;
     width: 100%;
-    min-height: 40vh;
+    min-height: 80vh;
     margin-bottom: 20px;
+    position: relative;
+}
+
+/*.overlay{position:absolute; filter:grayscale(100%);background-color:rgba(0,0,0,0.6); top:0; left:0; width:100%;height:100%;}*/
+
+.poster:nth-child(1){
+    background-image: url("/img/hister_grey.png");    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.poster header, .poster footer{
+    background-color: transparent;
+    text-align: center;
+    min-height:12.5vh;
+}
+
+.poster:nth-child(1) header{
+    color:yellow;
+    margin-bottom:35vh;
+}
+
+.poster:nth-child(1) header h2{
+    font-size: 2.95em;
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+    letter-spacing: 5px;
+    text-size-adjust: auto;
+    
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.poster:nth-child(1) header h3{
+    font-size: 1.35em;
+    font-weight: bold;
+    font-stretch: ultra-expanded;
+    letter-spacing: 5.5px;
+    text-size-adjust: auto;
+    
+text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.poster p.yellow {
+    background-color: rgba(255, 238, 0, 0.486);
+    font-family: serif;
+    font-size: 1.5em;
+    width: 85%;
+    margin: auto;
+    padding: 0.5em;
+}
+
+q{
+    display: block;
+    width:100%; 
+    margin:auto;
+}
+
+.poster:nth-child(1) footer{
+    background-color: white;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    border-top:5px groove goldenrod;
+  
+    border-top-left-radius: 75%;
+   
+    border-top-right-radius: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    padding-top: 5px;
+
+}
+
+.poster:nth-child(1) footer .izda{
+    width:75%;
+}
+
+.poster:nth-child(1) footer .dcha{
+    width:20%;
+}
+
+.poster:nth-child(1) footer .izda p{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+    font-family: serif;
+    font-size: 0.70em;
+}
+
+p.morado {
+    margin-top:2.5px !important;
+    color:mediumorchid;
+    font-weight: bold;
+}
+
+
+p.morado span {
+    color:mediumorchid;
+    font-weight: bold;
+    font-size: 0.65em;
+}
+
+.poster:nth-child(1) footer .dcha img{
+    max-width:100%
 }
 
 /* media query para pantallas grandes
